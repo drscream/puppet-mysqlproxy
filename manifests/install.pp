@@ -2,7 +2,7 @@ class mysqlproxy::install
 {
   package{
     'mysql-proxy':
-      ensure => installed;
+      ensure => latest;
   }
   file {
     "/etc/mysql-proxy":
